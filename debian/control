@@ -10,7 +10,5 @@ Standards-Version: 3.9.1
 
 Package: python-keystonemiddleware
 Architecture: all
-Depends:
- ${misc:Depends},
- ${python:Depends}
+Depends: ${misc:Depends}
 Description: Middleware for OpenStack Identity (Keystone) - Python 2.x
