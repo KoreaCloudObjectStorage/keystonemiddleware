@@ -1,0 +1,26 @@
+python-keystonemiddleware (1.0.0-4) a2company; urgency=low
+
+  * A2 company version
+
+ -- A2 company <a2company@a2company.co.kr>  Wed, 15 Apr 2015 00:00:00 +0000
+
+python-keystonemiddleware (1.0.0-3) unstable; urgency=medium
+
+  * Added CVE-2014-7144_convert_the_conf_value_into_correct_type.patch. Thanks
+    to Luciano Bello <luciano@debian.org> for the report (Closes: #762748).
+
+ -- Thomas Goirand <zigo@debian.org>  Thu, 25 Sep 2014 07:16:29 +0000
+
+python-keystonemiddleware (1.0.0-2) unstable; urgency=medium
+
+  * Do not attempt to run unit tests in Python 2.6, as it needs the discover
+    package, which we don't want as build-depends.
+  * Removes intersphinx plugin from docs build.
+
+ -- Thomas Goirand <zigo@debian.org>  Mon, 28 Jul 2014 00:29:44 +0800
+
+python-keystonemiddleware (1.0.0-1) unstable; urgency=medium
+
+  * Initial release. (Closes: #755135)
+
+ -- Thomas Goirand <zigo@debian.org>  Tue, 08 Jul 2014 14:25:47 +0800
