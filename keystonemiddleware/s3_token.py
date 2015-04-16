@@ -250,8 +250,8 @@ class S3Token(object):
         tenant_to_connect = force_tenant or tenant['id']
         self._logger.debug('Connecting with tenant: %s', tenant_to_connect)
         new_tenant_name = '%s%s' % (self._reseller_prefix, tenant_to_connect)
-        environ['PATH_INFO'] = environ['PATH_INFO'].replace(account,
-                                                            new_tenant_name)
+        environ['PATH_INFO'] = environ['PATH_INFO'].decode('utf-8').replace(account,
+                                                                            new_tenant_name).encode('utf-8')
         return self._app(environ, start_response)
 
 
